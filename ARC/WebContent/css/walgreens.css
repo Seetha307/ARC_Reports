@@ -1,0 +1,428 @@
+
+TR.highlight1 {
+	BACKGROUND-COLOR: #ccd4fb
+}
+TR.highlight2 {
+	BACKGROUND-COLOR: lightgreen
+}
+TR.highlight3 {
+	BACKGROUND-COLOR: #e8edff
+}
+/* Walgreens Intranet Standard Cascading Style Sheet - Version 1.03 - created 10/29/04 */
+
+/* Use H1 for Page Titles, use H2 - H5 for subheadings 
+If encountering cascading styles problems, the following HTML tags have
+styles applied:
+	
+	body
+	h1-5
+	p
+	li
+	table
+	th
+	td
+
+Do not override these styles in HTML. Contact the ISG to have the stylesheet modified.
+*/
+
+/* Added selectors: .alert and .attention*/
+
+/* The following classes are applied to all HTML elements on all webpages. */
+
+/*  Maximizes screen space - Catch all for loose code that denotes a coding error. */
+body {
+	font-family: Courier New, Courier, mono;
+	text-align: left;
+}
+
+/* Page title - Replaces PageTitle */
+h1 {
+	font-family: Verdana, Arial, Helvetica, sans-serif; 
+	font-size: 1em;
+	font-weight: bold;
+	color: #000000;
+	padding: 2px;
+	margin: 2px 0px 2px 0px;
+}
+/* Subheading 1 - Replaces GroupHeader */
+h2 {
+	font-family: Verdana, Arial, Helvetica, sans-serif; 
+	font-size: 0.85em;
+	font-weight: bold;
+	color: #000000;
+	padding: 2px;
+	margin: 3px 0px 0px 0px;
+	background-color: #CCCCFF;
+}
+
+/* Subheading 2 */
+h3 {
+	font-family: Verdana, Arial, Helvetica, sans-serif; 
+	font-size: 0.80em;
+	color: #000000;
+	margin: 3px 2px 0px 2px;
+}
+
+/* Subheading 3 - Replaces BoldTxt */
+h4 {
+	font-family: Verdana, Arial, Helvetica, sans-serif; 
+	font-size: 0.7em;
+	font-weight: bold;
+	color: #000000;
+	margin: 2px;
+}
+
+/* Subheading 4 */
+h5 {
+	font-family: Verdana, Arial, Helvetica, sans-serif; 
+	font-size: 0.7em;
+	font-style: italic;
+	color: #000000;
+	margin: 2px;
+}
+
+/* Subheading 5 - For screen readers */
+h6 {
+	font-family: Verdana, Arial, Helvetica, sans-serif; 
+	font-size: 0.7em;
+	font-weight: normal;
+	color: #000000;
+	margin: 2px;
+}
+
+/* Normal text - Replaces NormalTxt */
+p {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 0.7em;
+	color: #000000;
+	margin: 4px 2px 2px 2px;
+}
+
+/* Normal text - A substitute text for <p> tag when positioning is awkward - use with <span> tag */
+.normal {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 0.7em;
+	color: #000000;
+}
+
+.button {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 0.8em;
+	color: #000000;
+}
+
+.inputField {  	
+	font-family: Verdana, Arial, Helvetica, sans-serif; 
+	font-size: 0.7em;
+	font-weight: normal;
+}
+DIV.scroller {
+	BORDER-RIGHT: #e0e0e0 1px solid; BORDER-TOP: #e0e0e0 1px solid; MARGIN: 0px; OVERFLOW: auto; BORDER-LEFT: #e0e0e0 1px solid; WIDTH: 143px; BORDER-BOTTOM: #e0e0e0 1px solid; HEIGHT: 85px; BACKGROUND-COLOR: #fff
+}
+UL.noindent {
+	PADDING-LEFT: 10px; MARGIN: 0px 0px 0px 10px; TEXT-INDENT: 0px
+}
+OL.noindent {
+	PADDING-LEFT: 10px; MARGIN: 0px 0px 0px 10px; TEXT-INDENT: 0px
+}
+/* MUST BE CONTAINED BY <ul> OR <ol>, or it will cascade into other classes*/
+.list {
+	font-family: Verdana, Arial, Helvetica, sans-serif; 
+	font-size: 0.7em;
+	font-weight: normal;
+	color: #000000;
+	margin:  0px 0px 0px 30px;
+}
+
+/* MUST BE CONTAINED BY <ul> OR <ol>, or it will cascade into other classes*/
+.sublist {
+	font-family: Verdana, Arial, Helvetica, sans-serif; 
+	font-size: 0.7em;
+	font-weight: normal;
+	color: #000000;
+	margin: 0px 0px 0px 45px;
+}
+
+/* MUST BE CONTAINED BY <ul> OR <ol>, or it will cascade into other classes*/
+.subsublist {
+	font-family: Verdana, Arial, Helvetica, sans-serif; 
+	font-size: 0.7em;
+	font-weight: normal;
+	color: #000000;
+	margin: 0px 0px 0px 60px;
+}
+
+/* New label for links on hypertext menu - Applies to <span> tag - This is a cascaded size from containing tag - Also used for pilots*/
+.new {
+	font-size: 0.9em;
+	font-weight: bold;
+	color: #CC0000;
+}
+
+/* New label for inactive links - Applies to <span> tag or <a> tag */
+.linkOff {
+	color:#666666;
+	text-decoration:none;
+}
+
+
+/* Link text without underline for Display Only Forms only - Underline must appear on mouse over links */
+.linkHover {
+	color:#0000FF;
+	text-decoration:none;
+}
+
+/* right align text & numerical values */
+.r {
+	text-align: right;
+}
+
+/* Keeps table text vertically aligned - Catch all for loose code */
+table {
+	vertical-align: top;
+	border: 0px;
+}
+
+/*  Persistent Nav Tabs */
+.navTabOff {
+	font-family: Verdana, Arial, Helvetica, sans-serif; 
+	font-size: 0.8em;
+	font-weight: bold;
+	text-align: center;
+	color: #FFFFFF;
+	padding:0px;
+	border-bottom: 1px solid #333399;
+	background-color: #333399;
+	cursor: hand;
+}
+
+.navTabOn {
+	font-family: Verdana, Arial, Helvetica, sans-serif; 
+	font-size: 0.8em;
+	font-weight: bold;
+	color: #000000;
+	text-align: center;
+	padding:0px;
+	border-bottom: 1px solid #FFFFFF;
+	background-color: #FFFFFF;
+	cursor: hand;
+}
+
+.navTabCurr {
+	font-family: Verdana, Arial, Helvetica, sans-serif; 
+	font-size: 0.8em;	
+	font-weight: bold;
+	color: #000099;
+	text-align: center;
+	padding:0px;
+	border-bottom: 1px solid #E6E6FF;
+	background-color: #E6E6FF;
+	cursor: hand;
+}
+
+.navSpace {
+	font-size: 0.1em;	
+	border-bottom: 1px solid #333399;
+	background-color: #FFFFFF;
+}
+
+/* Cascading Drop-Down Menu - Section replaces CascMenu, CascMenuHref, CascMenuTxt, SelCascMenu */
+.CM {
+	font-family: Verdana, Arial, Helvetica, sans-serif; 
+	font-size: 0.8em;
+	text-align: center;
+	color: #000099;
+	padding: 0px;
+	width: 100%;
+	border: 1px solid #333399;
+	border-top: 0px;
+	background-color: #E6E6FF;
+	cursor: hand;
+}
+
+.CMOn {
+	color: #0000ff;
+	background-color: #FFFFF0;
+	cursor: hand;
+}
+
+.bodytextBold {
+	FONT-WEIGHT: bold; FONT-SIZE: 75%; COLOR: #000000; FONT-FAMILY: arial, helvetica, sans-serif
+}
+.bodytextLarge {
+	FONT-SIZE: 100%; COLOR: #000000; FONT-FAMILY: arial, helvetica, sans-serif
+}
+.CMOff {
+	color: #000099;
+	background-color: #E6E6FF;
+}
+
+/* bounding box applied to table tag - last table on screen. Bottom table wall has a border - Replaces simpletable*/
+.simpleTable {
+	border: 1px solid #CCCCFF;
+}
+
+/*  Table Header Cell or Row - Replaces TableGroupHeader */
+th {
+	text-align: left;
+	vertical-align: top;
+	padding: 1px;
+	border-bottom: 1px solid #333399;
+	margin-bottom: 0px;
+	background-color: #E6E6FF;
+}
+
+td {
+	vertical-align: top;
+}
+
+/* Display alternate data rows - Apply to the TR tag, not the TDs - Replaces AltTabData */
+.altRow {
+	background-color: #F0F0F0;
+}
+
+.bottomBorder {
+	border-bottom: 1px solid #666666;
+}
+
+.blankRowBorder {
+	border-left: 1px solid #666666;
+	border-right : 1px solid #666666;
+}
+
+/*  Blue Field and Central Object style applied to the Table tag*/
+.fieldBlue{
+	padding-left: 3px;
+	background-color: #E6E6FF;
+}
+
+/*  Grey Field and Central Object style applied to the Table tag Replaces CentralObjSelectionArea */
+.fieldGrey{
+	padding-left: 3px;
+	background-color: #D9D9D9;
+}
+.fieldBlue1{
+	font-size: 0.8em;
+	padding-left: 3px;
+	background-color: #E6E6FF;
+}
+.fieldNone{
+	
+	padding-left: 3px;
+	background-color: none;
+}
+/* Notebook Tab Active or Selected - Replaces SelctTab, SelctTab4*/
+.tabOn {
+	text-align: center;
+	padding: 3px;
+	border: 1px solid #333399;
+	border-bottom: 0px;
+	border-left: 0px;
+	background-color: #FFFFFF;
+}
+/* Notebook Tabs Inactive or deselected - Replaces UnSelctTab, UnSelctTab4*/
+.tabOff {
+	text-align: center;
+	padding: 3px;
+	border: 1px solid #333399;
+	border-top: 0px;
+	border-left: 1px solid #FFFFFF;
+	background-color: #E6E6E6;
+}
+
+/* Notebook Tab Container - Replaces TabBorderMenu, CentralObjBorder  */
+.tabBdr {
+	border-bottom: 1px solid #333399;
+	background-color: #E6E6E6;
+}
+
+/* List menu styles - Section replaces ListItemLeftBar, SelListItemHt, SelcListMenu*/
+
+/* Container cell for actual list - Replaces ListMenu */
+.lm {
+	vertical-align: top;
+	padding: 1px;
+	border-top: 1px solid #333399;
+	border-left: 1px solid #333399;
+	border-bottom: 1px solid #333399;
+	background-color: #E6E6E6;
+}
+
+/* List menu right column inactive - Replaces ListItemLeftBar */
+.lmOff {
+	text-align: left;
+	border-right : 1px solid #333399;
+	background-color: #E6E6E6;
+}
+
+/* List menu right column active - Replaces SelListItemHt and SelcListMenu  */
+.lmOn {
+	border-top : 1px solid #333399;
+	border-bottom : 1px solid #333399;
+	background-color: #FFFFFF;
+}
+
+.alert {
+	padding: 2px;
+	background-color: #FFCC33;
+}
+
+/* Highlight confirmation messages or good data - apply to text or cell - Replaces GoodPerf */
+.good {
+	padding: 2px;
+	margin:0px;
+	border: 3px double #33CC66;
+}
+
+/* Highlight error data - apply to text or cell - Replaces BadPerf, ErrorMess, RedBorder */
+.bad {
+	padding: 2px;
+	margin:0px;
+	border: 3px solid #CC3333;
+}
+
+/* Highlight for attention - apply to text or cell - Last resort, other attention getting devices should be employed first */
+.attention {
+	padding: 2px;
+	margin:0px;
+	border: 3px double #FFCC33;
+}
+
+/* Data is not available or not applicable - apply to text or cell */
+.NA {
+	padding: 2px;
+	margin:0px;
+	border: 3px solid #999999;
+	background-color: #CCCCCC;
+}
+
+/* Highlight warning or missing Data - apply to text or cell - Replaces WarningText and MissingData */
+.warn {
+	padding: 2px;
+	margin:0px;
+	background-color:#FFFFCC;
+}
+
+/* For Mandatory Data - Must be applied to text tag (p, h4, h6, etc.)*/
+.mand {
+	font-weight: bold;
+	color: #CC0000;
+}
+
+.groupHeaderBG{
+	background-color: #CCCCFF;
+}
+.Menu
+{
+    PADDING-RIGHT: 0px;
+    PADDING-LEFT: 0px;
+    LEFT: 0px;
+    PADDING-BOTTOM: 0px;
+    COLOR: #4AA02C;
+    PADDING-TOP: 0px;
+    POSITION: absolute;
+    BACKGROUND-COLOR: transparent
+}
+
+
+

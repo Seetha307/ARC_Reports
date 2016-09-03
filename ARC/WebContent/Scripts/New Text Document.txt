@@ -1,0 +1,59 @@
+fixMozillaZIndex=true; //Fixes Z-Index problem  with Mozilla browsers but causes odd scrolling problem, toggle to see if it helps
+_menuCloseDelay=500;
+_menuOpenDelay=150;
+_subOffsetTop=2;
+_subOffsetLeft=-2;
+
+
+
+
+with(menuStyle=new mm_style()){
+bordercolor="#EE0000";
+borderstyle="solid";
+borderwidth=1;
+fontfamily="Verdana, Tahoma, Arial";
+fontsize="75%";
+fontstyle="normal";
+headerbgcolor="#FFFFFF";
+headercolor="#FFFFFF";
+offbgcolor="#FFFFFF";
+offcolor="#EE0000";
+onbgcolor="#EE0000";
+oncolor="#FFFFFF";
+outfilter="randomdissolve(duration=0.3)";
+overfilter="Fade(duration=0.2);Alpha(opacity=90);Shadow(color=#777777', Direction=135, Strength=3)";
+padding=7;
+pagebgcolor="#FFFFFF";
+pagecolor="#EE0000";
+separatorcolor="silver";
+separatorsize=5;
+subimage="../Images/arrow.gif";
+subimageposition="right";
+subimagepadding=8;
+}
+
+with(milonic=new menuname("Main Menu")){
+alwaysvisible=1;
+orientation="horizontal";
+style=menuStyle;
+aI("text=My Tasks;url=ADMINHOMEPAGE.html;");
+aI("text=User Listings;url=PROJMGMT.html;");
+
+}
+
+with(milonic=new menuname("userm")){
+style=menuStyle;
+aI("text=&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Member&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;;url=ADMINHOMEPAGE.html;");
+aI("text=&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;Anchor&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;;url=Anchorreports.html;");
+}
+
+with(milonic=new menuname("Reports")){
+style=menuStyle;
+aI("text=&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Project Report&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;;url=REPORT.html;");
+aI("text=&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Anchor Report&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;;url=Anchor_Reports.html;");
+aI("text=&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Member Report&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;;url=Member_Reports.html;");
+}
+
+
+drawMenus();
+
